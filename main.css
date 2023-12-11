@@ -1,14 +1,17 @@
 body {
     background: url(bg.png);
     color: #fff;
+    margin: 0; /* Add this to remove default body margin */
+    display: flex;
+    justify-content: center;
 }
 
 .content {
     width: 780px;
     border: #fff 1px solid;
-    margin: auto;
     text-align: center;
 }
+
 
 h1 {
     color: #ff0;
