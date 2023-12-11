@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <style>
         body {
             background: url(bg.png) center center fixed;
@@ -44,9 +46,26 @@
             text-align: center;
             width: 50%;
         }
+        .slider {
+    width: 80%; /* Adjust the width as needed */
+    margin: auto;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
     </style>
 </head>
 <body>
+    <div class="slider">
+    <div><img src="hannah.jpg" alt="Image 1"></div>
+    <div><img src="path/to/image2.jpg" alt="Image 2"></div>
+    <div><img src="path/to/image3.jpg" alt="Image 3"></div>
+    <!-- Add more divs for additional images -->
+</div>
+
     <div class="content">
       
             <img src="construction.webp" />
@@ -62,6 +81,19 @@
                             <img src="guestbook.gif" alt="Guestbook">
                         </a> 
                     </td>
+                    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000, // Adjust as needed
+        });
+    });
+</script>
+
 </body>
 </html>
 
